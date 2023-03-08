@@ -1,0 +1,79 @@
+irun: 09.20-s022: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	irun	09.20-s022: Started on Feb 08, 2023 at 23:25:40 CST
+irun
+	-gui
+	-f my.flist
+		../rtl/fc_tb.v
+		../rtl/fc.v
+	-input script.tcl
+	-message
+	-coverage all
+	-covoverwrite
+	+access+rwc
+	+sv
+file: ../rtl/fc_tb.v
+	module worklib.fc_tb:v
+		errors: 0, warnings: 0
+file: ../rtl/fc.v
+	module worklib.fc:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		fc_tb
+
+	Extracting FSMs for coverage:
+		worklib.fc
+		worklib.fc_tb
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+ncelab: *W,COVDCL: By default coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators, and for expressions in assignment statements, use the "set_expr_scoring -all" coverage configuration command at elaboration.
+	Generating native compiled code:
+		worklib.fc:v <0x69ba4a4a>
+			streams: 228, words: 116690
+		worklib.fc_tb:v <0x4b86727f>
+			streams:  25, words: 11781
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:              44      44
+		Scalar wires:            5       -
+		Vectored wires:          8       -
+		Always blocks:          16      16
+		Initial blocks:          4       4
+		Cont. assignments:       2       2
+		Pseudo assignments:     11      11
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.fc_tb:v
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /CAD/IUS92/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> database -open waves -shm -default
+Created default SHM database waves
+ncsim> probe -create -all -depth all
+Created probe 1
+ncsim> 
+ncsim> run
+cnt_fc:    0  
+fc_result_tb:         560  
+Simulation complete via $finish(1) at time 5240 NS + 0
+../rtl/fc_tb.v:120 		$finish;
+ncsim> ^C
+ncsim> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  fc_tb(fc_tb)
+  design   :  design
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/design/65961a50_00000000.ucm
+  data               :  ./cov_work/design/test/icc.ucd
+TOOL:	irun	09.20-s022: Exiting on Feb 08, 2023 at 23:26:35 CST  (total: 00:00:55)

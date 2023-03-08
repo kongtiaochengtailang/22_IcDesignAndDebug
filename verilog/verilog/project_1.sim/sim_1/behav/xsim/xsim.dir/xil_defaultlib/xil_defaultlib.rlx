@@ -1,0 +1,12 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.srcs/sim_1/imports/sim/conv_tb.v,1676123873,verilog,,,,conv_tb,,,,,,,,
+C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.srcs/sim_1/imports/sim/fc_tb.v,1676125844,verilog,,,,fc_tb,,,,,,,,
+C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.srcs/sim_1/imports/sim/maxpooling_tb.v,1676124632,verilog,,,,maxpooling_tb,,,,,,,,
+C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.srcs/sources_1/imports/rtl/conv.v,1675823116,verilog,,C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.srcs/sources_1/imports/rtl/window.v,,conv,,,,,,,,
+C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.srcs/sources_1/imports/rtl/fc.v,1675818111,verilog,,C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.srcs/sim_1/imports/sim/fc_tb.v,,fc,,,,,,,,
+C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.srcs/sources_1/imports/rtl/maxpooling_24X24.v,1675817441,verilog,,C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.srcs/sim_1/imports/sim/maxpooling_tb.v,,maxpooling,,,,,,,,
+C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.srcs/sources_1/imports/rtl/window.v,1675823150,verilog,,C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.srcs/sim_1/imports/sim/conv_tb.v,,window,,,,,,,,

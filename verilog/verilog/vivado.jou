@@ -1,0 +1,95 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Feb 11 12:49:20 2023
+# Process ID: 8016
+# Current directory: C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14312 C:\Users\liuzhouquan\Desktop\LPR\liuzhouquan_lizhaoyang\vivado\verilog\project_1.xpr
+# Log file: C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/vivado.log
+# Journal file: C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top conv_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+set_property is_enabled false [get_files  C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/fc_tb_behav.wcfg]
+set_property is_enabled true [get_files  C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/conv_tb_behav.wcfg]
+launch_simulation
+open_wave_config C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/conv_tb_behav.wcfg
+source conv_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/conv_tb_behav.wcfg
+source conv_tb.tcl
+restart
+run all
+current_wave_config {conv_tb_behav.wcfg}
+add_wave {{/conv_tb/u_conv/clk}} {{/conv_tb/u_conv/rstn}} {{/conv_tb/u_conv/start}} {{/conv_tb/u_conv/weight_en}} {{/conv_tb/u_conv/weight}} {{/conv_tb/u_conv/taps}} {{/conv_tb/u_conv/state}} {{/conv_tb/u_conv/dout}} {{/conv_tb/u_conv/ovalid}} {{/conv_tb/u_conv/done}} {{/conv_tb/u_conv/weight_addr}} {{/conv_tb/u_conv/cnt1}} {{/conv_tb/u_conv/cnt2}} {{/conv_tb/u_conv/cnt2s}} {{/conv_tb/u_conv/cnt3s}} {{/conv_tb/u_conv/wr_data}} {{/conv_tb/u_conv/sum_valid}} {{/conv_tb/u_conv/sum_valid_ff}} {{/conv_tb/u_conv/Ni}} {{/conv_tb/u_conv/k00}} {{/conv_tb/u_conv/k01}} {{/conv_tb/u_conv/k02}} {{/conv_tb/u_conv/k03}} {{/conv_tb/u_conv/k04}} {{/conv_tb/u_conv/k10}} {{/conv_tb/u_conv/k11}} {{/conv_tb/u_conv/k12}} {{/conv_tb/u_conv/k13}} {{/conv_tb/u_conv/k14}} {{/conv_tb/u_conv/k20}} {{/conv_tb/u_conv/k21}} {{/conv_tb/u_conv/k22}} {{/conv_tb/u_conv/k23}} {{/conv_tb/u_conv/k24}} {{/conv_tb/u_conv/k30}} {{/conv_tb/u_conv/k31}} {{/conv_tb/u_conv/k32}} {{/conv_tb/u_conv/k33}} {{/conv_tb/u_conv/k34}} {{/conv_tb/u_conv/k40}} {{/conv_tb/u_conv/k41}} {{/conv_tb/u_conv/k42}} {{/conv_tb/u_conv/k43}} {{/conv_tb/u_conv/k44}} {{/conv_tb/u_conv/m04}} {{/conv_tb/u_conv/m14}} {{/conv_tb/u_conv/m24}} {{/conv_tb/u_conv/m34}} {{/conv_tb/u_conv/m44}} {{/conv_tb/u_conv/m00}} {{/conv_tb/u_conv/m01}} {{/conv_tb/u_conv/m02}} {{/conv_tb/u_conv/m03}} {{/conv_tb/u_conv/m10}} {{/conv_tb/u_conv/m11}} {{/conv_tb/u_conv/m12}} {{/conv_tb/u_conv/m13}} {{/conv_tb/u_conv/m20}} {{/conv_tb/u_conv/m21}} {{/conv_tb/u_conv/m22}} {{/conv_tb/u_conv/m23}} {{/conv_tb/u_conv/m30}} {{/conv_tb/u_conv/m31}} {{/conv_tb/u_conv/m32}} {{/conv_tb/u_conv/m33}} {{/conv_tb/u_conv/m40}} {{/conv_tb/u_conv/m41}} {{/conv_tb/u_conv/m42}} {{/conv_tb/u_conv/m43}} {{/conv_tb/u_conv/p00}} {{/conv_tb/u_conv/p01}} {{/conv_tb/u_conv/p02}} {{/conv_tb/u_conv/p03}} {{/conv_tb/u_conv/p04}} {{/conv_tb/u_conv/p10}} {{/conv_tb/u_conv/p11}} {{/conv_tb/u_conv/p12}} {{/conv_tb/u_conv/p13}} {{/conv_tb/u_conv/p14}} {{/conv_tb/u_conv/p20}} {{/conv_tb/u_conv/p21}} {{/conv_tb/u_conv/p22}} {{/conv_tb/u_conv/p23}} {{/conv_tb/u_conv/p24}} {{/conv_tb/u_conv/p30}} {{/conv_tb/u_conv/p31}} {{/conv_tb/u_conv/p32}} {{/conv_tb/u_conv/p33}} {{/conv_tb/u_conv/p34}} {{/conv_tb/u_conv/p40}} {{/conv_tb/u_conv/p41}} {{/conv_tb/u_conv/p42}} {{/conv_tb/u_conv/p43}} {{/conv_tb/u_conv/p44}} {{/conv_tb/u_conv/sum00}} {{/conv_tb/u_conv/sum01}} {{/conv_tb/u_conv/sum02}} {{/conv_tb/u_conv/sum03}} {{/conv_tb/u_conv/sum04}} {{/conv_tb/u_conv/sum05}} {{/conv_tb/u_conv/sum06}} {{/conv_tb/u_conv/sum07}} {{/conv_tb/u_conv/sum08}} {{/conv_tb/u_conv/sum09}} {{/conv_tb/u_conv/sum10}} {{/conv_tb/u_conv/sum11}} {{/conv_tb/u_conv/sum12}} {{/conv_tb/u_conv/sum13}} {{/conv_tb/u_conv/sum14}} {{/conv_tb/u_conv/sum15}} {{/conv_tb/u_conv/sum16}} {{/conv_tb/u_conv/sum17}} {{/conv_tb/u_conv/sum18}} {{/conv_tb/u_conv/sum19}} {{/conv_tb/u_conv/sum20}} {{/conv_tb/u_conv/sum21}} {{/conv_tb/u_conv/sum22}} {{/conv_tb/u_conv/sum23}} {{/conv_tb/u_conv/sum24}} {{/conv_tb/u_conv/sum0}} {{/conv_tb/u_conv/sum1}} {{/conv_tb/u_conv/sum2}} {{/conv_tb/u_conv/sum3}} {{/conv_tb/u_conv/sum4}} {{/conv_tb/u_conv/sum100}} {{/conv_tb/u_conv/sum101}} {{/conv_tb/u_conv/sum102}} {{/conv_tb/u_conv/sum110}} {{/conv_tb/u_conv/sum120}} {{/conv_tb/u_conv/K}} {{/conv_tb/u_conv/S}} 
+current_wave_config {conv_tb_behav.wcfg}
+add_wave {{/conv_tb/clk}} {{/conv_tb/rstn}} {{/conv_tb/start_conv}} {{/conv_tb/weight_en}} {{/conv_tb/weight_c}} {{/conv_tb/state}} {{/conv_tb/start_window}} {{/conv_tb/image_in}} {{/conv_tb/conv_result}} {{/conv_tb/conv_ovalid}} {{/conv_tb/conv_done}} {{/conv_tb/taps}} {{/conv_tb/fp_i}} {{/conv_tb/count_w}} {{/conv_tb/STATE}} {{/conv_tb/cnt_line}} {{/conv_tb/conv_result_r}} {{/conv_tb/cnt_conv}} {{/conv_tb/i}} {{/conv_tb/display_line}} {{/conv_tb/iIndex}} {{/conv_tb/iBmpWidth}} {{/conv_tb/iBmpHight}} {{/conv_tb/iBmpSize}} {{/conv_tb/iDataStartIndex}} {{/conv_tb/iBmpFileId}} {{/conv_tb/iCode}} {{/conv_tb/oBmpFileId_1}} {{/conv_tb/rBmpData}} {{/conv_tb/conv_pixel_data_1}} {{/conv_tb/conv_BmpData_1}} {{/conv_tb/k}} {{/conv_tb/cycle}} 
+save_wave_config {C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/conv_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/conv_tb_behav.wcfg
+source conv_tb.tcl
+restart
+run 16700 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/conv_tb_behav.wcfg
+source conv_tb.tcl
+restart
+run 16700 ns
+close_sim
+launch_simulation
+open_wave_config C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/conv_tb_behav.wcfg
+source conv_tb.tcl
+restart
+run 16700 ns
+relaunch_sim
+restart
+run 16700 ns
+save_wave_config {C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/conv_tb_behav.wcfg}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top maxpooling_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/conv_tb_behav.wcfg
+source maxpooling_tb.tcl
+current_wave_config {conv_tb_behav.wcfg}
+add_wave {{/maxpooling_tb/clk}} {{/maxpooling_tb/rstn}} {{/maxpooling_tb/ivalid}} {{/maxpooling_tb/state}} {{/maxpooling_tb/din}} {{/maxpooling_tb/dout}} {{/maxpooling_tb/ovalid}} {{/maxpooling_tb/STATE}} {{/maxpooling_tb/cnt_line}} {{/maxpooling_tb/count_w}} {{/maxpooling_tb/fp_i}} {{/maxpooling_tb/pool_result_tb}} {{/maxpooling_tb/cnt_pool}} {{/maxpooling_tb/i}} {{/maxpooling_tb/display_line}} 
+run 16700 ns
+restart
+run 16700 ns
+restart
+run 16700 ns
+current_sim simulation_5
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top fc_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+set_property is_enabled false [get_files  C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/conv_tb_behav.wcfg]
+set_property is_enabled true [get_files  C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/fc_tb_behav.wcfg]
+launch_simulation
+open_wave_config C:/Users/liuzhouquan/Desktop/LPR/liuzhouquan_lizhaoyang/vivado/verilog/project_1.sim/sim_1/disable/fc_tb_behav.wcfg
+source fc_tb.tcl
+restart
+run 16700 ns
+close_sim
+close_sim

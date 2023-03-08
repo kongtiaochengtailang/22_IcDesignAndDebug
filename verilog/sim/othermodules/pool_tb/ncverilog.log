@@ -1,0 +1,6 @@
+ncverilog: 09.20-s022: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	ncverilog	09.20-s022: Started on Oct 17, 2022 at 15:53:25 CST
+ncverilog
+	+gui
+ncverilog: *E,NOMOPT: You have not specified a -R (or a -r <snapshot>) option, nor have you specified a source file for compilation.
+TOOL:	ncverilog	09.20-s022: Exiting on Oct 17, 2022 at 15:53:25 CST  (total: 00:00:00)

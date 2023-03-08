@@ -1,0 +1,47 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Feb  8 10:19:34 2023
+# Process ID: 16992
+# Current directory: C:/Users/liuzhouquan/Desktop/remotes/liuzhouquan_lizhaoyang/vivado/verilog
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21056 C:\Users\liuzhouquan\Desktop\remotes\liuzhouquan_lizhaoyang\vivado\verilog\project_1.xpr
+# Log file: C:/Users/liuzhouquan/Desktop/remotes/liuzhouquan_lizhaoyang/vivado/verilog/vivado.log
+# Journal file: C:/Users/liuzhouquan/Desktop/remotes/liuzhouquan_lizhaoyang/vivado/verilog\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/liuzhouquan/Desktop/remotes/liuzhouquan_lizhaoyang/vivado/verilog/project_1.xpr
+INFO: [Project 1-313] Project file moved from 'D:/personal_srcs/homework/cnn_verilog/project_1' since last save.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/conv.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/window.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/maxpooling_24X24.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/fc.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/fc_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/maxpooling_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/conv_tb.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/window_tb.v'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/FPGA/vivado/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+add_files -norecurse -scan_for_includes {C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/maxpooling_24X24.v C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/fc.v C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/conv.v C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/window.v}
+WARNING: [filemgmt 56-12] File 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/maxpooling_24X24.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/fc.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/conv.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/window.v' cannot be added to the project because it already exists in the project, skipping this file
+import_files -norecurse {C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/maxpooling_24X24.v C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/fc.v C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/conv.v C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/rtl/window.v}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes {C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/window_tb.v C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/fc_tb.v C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/conv_tb.v C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/maxpooling_tb.v}
+WARNING: [filemgmt 56-12] File 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/window_tb.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/fc_tb.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/conv_tb.v' cannot be added to the project because it already exists in the project, skipping this file
+WARNING: [filemgmt 56-12] File 'C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/maxpooling_tb.v' cannot be added to the project because it already exists in the project, skipping this file
+import_files -fileset sim_1 -norecurse {C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/window_tb.v C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/fc_tb.v C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/conv_tb.v C:/Users/liuzhouquan/Desktop/cnn_accelerator-main/cnn_accelerator-main/sim/maxpooling_tb.v}
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb  8 10:29:16 2023...

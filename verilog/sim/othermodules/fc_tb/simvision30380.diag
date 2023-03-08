@@ -1,0 +1,82 @@
+*** Message Type: info ***
+When: 三  2月 08 23时11分36秒 CST 2023
+SimVision started.
+Version: TOOL:  simvision       09.20-s022
+User: vlsi
+Host: localhost.localdomain
+Platform: Linux/i686/2.6.9-89.ELsmp
+Started: 三  2月 08 23时11分36秒 CST 2023
+Command: /CAD/IUS92/tools.lnx86/simvision/bin/simvision.exe -connect dc:localhost.localdomain:33923 -nocopyright
+Work Directory: /home/vlsi/code/sim
+ 
+*** Message Type: info ***
+When: 三  2月 08 23时11分37秒 CST 2023
+Create browser window: "Design Browser 1"
+ 
+*** Message Type: info ***
+When: 三  2月 08 23时11分37秒 CST 2023
+Create console window: "Console"
+ 
+*** Message Type: info ***
+When: 三  2月 08 23时12分55秒 CST 2023
+Create waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: 三  2月 08 23时13分03秒 CST 2023
+Delete waveform window: "Waveform 1"
+ 
+*** Message Type: info ***
+When: 三  2月 08 23时13分10秒 CST 2023
+Exit NC-Sim: user
+      Design: worklib.conv_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:  ncsim   09.20-s022
+        User: vlsi
+        Host: localhost.localdomain
+Time Started: 三  2月 08 23时11分35秒 CST 2023
+  Process ID: 30376
+   Directory: /home/vlsi/code/sim
+     Command: irun -gui -f my.flist -input script.tcl -message -coverage all -covoverwrite +access+rwc +sv
+
+ 
+*** Message Type: error ***
+When: 三  2月 08 23时13分13秒 CST 2023
+NC-Sim Crashed:
+      Design: worklib.conv_tb:v
+   Languages: verilog
+   Simulator: NC-Sim
+     Version: TOOL:  ncsim   09.20-s022
+        User: vlsi
+        Host: localhost.localdomain
+Time Started: 三  2月 08 23时11分35秒 CST 2023
+  Process ID: 30376
+   Directory: /home/vlsi/code/sim
+     Command: irun -gui -f my.flist -input script.tcl -message -coverage all -covoverwrite +access+rwc +sv
+
+Outstanding STRAP Requests:
+        strap::report enable out
+ 
+*** Message Type: info ***
+When: 三  2月 08 23时13分13秒 CST 2023
+Recall Simulator
+ 
+*** Message Type: error ***
+When: 三  2月 08 23时13分13秒 CST 2023
+can't read "sims(state)": no such element in array
+can't read "sims(state)": no such element in array
+    while executing
+"if {$sims(state) == "terminated"} {
+    return
+    }"
+    (object "::.console0.work.user.tabnotebook.1" method "::ConsoleSimTab::_simState" body line 8)
+    invoked from within
+"::.console0.work.user.tabnotebook.1 _simState event !state"
+    (in namespace inscope "::ConsoleSimTab" script line 1)
+    invoked from within
+"namespace inscope ::ConsoleSimTab {::.console0.work.user.tabnotebook.1 _simState} event !state"
+ 
+*** Message Type: info ***
+When: 三  2月 08 23时13分14秒 CST 2023
+SimVision Exit.
+ 

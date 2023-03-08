@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="conv_core.cpp" path="D:\personal_srcs\Fpga-accelerator-demos-main\Fpga-accelerator-demos-main\conv_core.cpp"/>
+    <originFiles name="conv_core.h" path="D:\personal_srcs\Fpga-accelerator-demos-main\Fpga-accelerator-demos-main\conv_core.h"/>
+    <originFiles name="pooling.cpp" path="D:\personal_srcs\Fpga-accelerator-demos-main\Fpga-accelerator-demos-main\pooling.cpp"/>
+    <originFiles name="pooling.h" path="D:\personal_srcs\Fpga-accelerator-demos-main\Fpga-accelerator-demos-main\pooling.h"/>
+  </source>
+  <testbench>
+    <originFiles name="main.cpp" path="D:\googledownload\hls_for_cnn_mnist-main\hls_for_cnn_mnist-main\conv_core_hls\main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

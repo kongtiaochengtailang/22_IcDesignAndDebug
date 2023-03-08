@@ -1,0 +1,506 @@
+==============================================================
+File generated on Wed Jan 15 22:55:07 +0800 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../../Fpga-accelerator-demos-main/Fpga-accelerator-demos-main/conv_core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 102.613 ; gain = 17.305
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 102.613 ; gain = 17.305
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 123.500 ; gain = 38.191
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 134.465 ; gain = 49.156
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../../Fpga-accelerator-demos-main/Fpga-accelerator-demos-main/conv_core.cpp:38:19) in function 'Conv'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 167.145 ; gain = 81.836
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 169.996 ; gain = 84.688
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Conv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.817 seconds; current allocated memory: 118.861 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 5 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.073 seconds; current allocated memory: 119.572 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/CHin_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Hin_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Win_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/CHout_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Kx_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Ky_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Sx_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Sy_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/pd_mode_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/relu_en_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/feature_in' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/conv_w' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/bias' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/feature_out' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Conv' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'Hin_V', 'Win_V', 'CHout_V', 'Kx_V', 'Ky_V', 'Sx_V', 'Sy_V', 'pd_mode_V' and 'relu_en_V' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'Conv_fadd_32ns_32ns_32_5_full_dsp_1' to 'Conv_fadd_32ns_32bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_fcmp_32ns_32ns_1_1_1' to 'Conv_fcmp_32ns_32cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_sdiv_18s_9ns_16_22_seq_1' to 'Conv_sdiv_18s_9nsdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_sdiv_19s_9ns_16_23_seq_1' to 'Conv_sdiv_19s_9nseOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_mul_mul_16ns_16ns_32_1_1' to 'Conv_mul_mul_16nsfYi' due to the length limit 20
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_AWID' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_AWUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_WVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_WVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_WREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_WDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_WDATA' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_WSTRB' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_WLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_WLAST' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_WID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_WID' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_WUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_WUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_ARID' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_ARUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_RVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_RREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_RREADY' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_RDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_RLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_RID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_RUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_RRESP' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_BVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_BREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_feature_in_BREADY' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_BRESP' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_BID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_feature_in_BUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_AWVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_AWADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_AWID' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_AWLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_AWSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_AWBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_AWLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_AWCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_AWPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_AWQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_AWREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_AWUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_AWUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_WVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_WVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_WREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_WDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_WDATA' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_WSTRB' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_WSTRB' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_WLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_WLAST' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_WID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_WID' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_WUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_WUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_ARVALID' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARADDR' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_ARADDR' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_ARID' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARLEN' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_ARLEN' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARSIZE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_ARSIZE' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARBURST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_ARBURST' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARLOCK' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_ARLOCK' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARCACHE' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_ARCACHE' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARPROT' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_ARPROT' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARQOS' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_ARQOS' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARREGION' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_ARREGION' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_ARUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_ARUSER' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_RVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_RREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_RREADY' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_RDATA' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_RLAST' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_RID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_RUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_RRESP' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_BVALID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_BREADY' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Setting dangling out port 'Conv/m_axi_conv_w_BREADY' to 0.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_BRESP' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_BID' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+WARNING: [RTGEN 206-101] Port 'Conv/m_axi_conv_w_BUSER' has no fanin or fanout and is left dangling.
+               Please use C simulation to confirm this function argument can be read from or written to.
+INFO: [RTGEN 206-100] Generating core module 'Conv_fadd_32ns_32bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_fcmp_32ns_32cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_mul_mul_16nsfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_sdiv_18s_9nsdEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_sdiv_19s_9nseOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv'.
+INFO: [HLS 200-111]  Elapsed time: 0.494 seconds; current allocated memory: 121.511 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Conv_sdiv_18s_9nsdEe_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'Conv_sdiv_19s_9nseOg_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 177.922 ; gain = 92.613
+INFO: [SYSC 207-301] Generating SystemC RTL for Conv.
+INFO: [VHDL 208-304] Generating VHDL RTL for Conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for Conv.
+INFO: [HLS 200-112] Total elapsed time: 10.764 seconds; peak allocated memory: 121.511 MB.
+==============================================================
+File generated on Wed Jan 15 22:55:37 +0800 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Mon Jan 16 12:33:44 +0800 2023
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../../Fpga-accelerator-demos-main/Fpga-accelerator-demos-main/conv_core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 102.672 ; gain = 17.605
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 102.672 ; gain = 17.605
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 123.535 ; gain = 38.469
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 134.574 ; gain = 49.508
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../../Fpga-accelerator-demos-main/Fpga-accelerator-demos-main/conv_core.cpp:38:19) in function 'Conv'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 166.934 ; gain = 81.867
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 169.773 ; gain = 84.707
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Conv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 9.563 seconds; current allocated memory: 118.946 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 5 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.095 seconds; current allocated memory: 119.712 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/CHin_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Hin_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Win_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/CHout_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Kx_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Ky_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Sx_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Sy_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/pd_mode_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/relu_en_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/feature_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/conv_w' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/bias' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/feature_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Conv' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'CHin_V', 'Hin_V', 'Win_V', 'CHout_V', 'Kx_V', 'Ky_V', 'Sx_V', 'Sy_V', 'pd_mode_V', 'relu_en_V', 'feature_in', 'conv_w', 'bias' and 'feature_out' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'Conv_fadd_32ns_32ns_32_5_full_dsp_1' to 'Conv_fadd_32ns_32bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_fcmp_32ns_32ns_1_1_1' to 'Conv_fcmp_32ns_32cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_sdiv_18s_9ns_16_22_seq_1' to 'Conv_sdiv_18s_9nsdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_sdiv_19s_9ns_16_23_seq_1' to 'Conv_sdiv_19s_9nseOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_mul_mul_16ns_16ns_32_1_1' to 'Conv_mul_mul_16nsfYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Conv_fadd_32ns_32bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_fcmp_32ns_32cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_mul_mul_16nsfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_sdiv_18s_9nsdEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_sdiv_19s_9nseOg': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv'.
+INFO: [HLS 200-111]  Elapsed time: 0.177 seconds; current allocated memory: 121.173 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Conv_sdiv_18s_9nsdEe_div'
+INFO: [RTMG 210-282] Generating pipelined core: 'Conv_sdiv_19s_9nseOg_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 176.527 ; gain = 91.461
+INFO: [SYSC 207-301] Generating SystemC RTL for Conv.
+INFO: [VHDL 208-304] Generating VHDL RTL for Conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for Conv.
+INFO: [HLS 200-112] Total elapsed time: 11.072 seconds; peak allocated memory: 121.173 MB.
+==============================================================
+File generated on Thu Jan 16 12:35:00 +0800 2020
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+==============================================================
+File generated on Thu Jan 19 09:58:19 +0800 2023
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+File generated on Tue Feb 05 22:46:28 +0800 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../../Fpga-accelerator-demos-main/Fpga-accelerator-demos-main/conv_core.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 102.754 ; gain = 17.332
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 102.754 ; gain = 17.332
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 124.086 ; gain = 38.664
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 135.555 ; gain = 50.133
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (../../Fpga-accelerator-demos-main/Fpga-accelerator-demos-main/conv_core.cpp:38:19) in function 'Conv'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 169.082 ; gain = 83.660
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 171.641 ; gain = 86.219
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'Conv' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 11.264 seconds; current allocated memory: 120.375 MB.
+INFO: [HLS 200-434] Only 0 loops out of a total 6 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.113 seconds; current allocated memory: 121.487 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Conv' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/CHin_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Hin_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Win_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/CHout_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Kx_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Ky_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Sx_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/Sy_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/pd_mode_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/relu_en_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/feature_in' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/conv_w' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/bias' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'Conv/feature_out' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'Conv' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'CHin_V', 'Hin_V', 'Win_V', 'CHout_V', 'Kx_V', 'Ky_V', 'Sx_V', 'Sy_V', 'pd_mode_V', 'relu_en_V', 'feature_in', 'conv_w', 'bias' and 'feature_out' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'Conv_fadd_32ns_32ns_32_5_full_dsp_1' to 'Conv_fadd_32ns_32bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_fmul_32ns_32ns_32_4_max_dsp_1' to 'Conv_fmul_32ns_32cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_fcmp_32ns_32ns_1_1_1' to 'Conv_fcmp_32ns_32dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_sdiv_19s_9ns_16_23_seq_1' to 'Conv_sdiv_19s_9nseOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_mul_mul_16ns_16ns_32_1_1' to 'Conv_mul_mul_16nsfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'Conv_mac_muladd_16ns_16ns_48ns_48_1_1' to 'Conv_mac_muladd_1g8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'Conv_fadd_32ns_32bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_fcmp_32ns_32dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_fmul_32ns_32cud': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_mac_muladd_1g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_mul_mul_16nsfYi': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'Conv_sdiv_19s_9nseOg': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Conv'.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 123.617 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'Conv_sdiv_19s_9nseOg_div'
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 181.641 ; gain = 96.219
+INFO: [SYSC 207-301] Generating SystemC RTL for Conv.
+INFO: [VHDL 208-304] Generating VHDL RTL for Conv.
+INFO: [VLOG 209-307] Generating Verilog RTL for Conv.
+INFO: [HLS 200-112] Total elapsed time: 13.009 seconds; peak allocated memory: 123.617 MB.
+==============================================================
+File generated on Tue Feb 05 22:47:21 +0800 2019
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

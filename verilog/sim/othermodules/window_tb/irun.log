@@ -1,0 +1,234 @@
+irun: 09.20-s022: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	irun	09.20-s022: Started on Feb 08, 2023 at 23:06:48 CST
+irun
+	-gui
+	-f my.flist
+		../rtl/window_tb.v
+		../rtl/window.v
+	-input script.tcl
+	-message
+	-coverage all
+	-covoverwrite
+	+access+rwc
+	+sv
+file: ../rtl/window_tb.v
+file: ../rtl/window.v
+	module worklib.window:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		window_tb
+
+	Extracting FSMs for coverage:
+		worklib.window
+		worklib.window_tb
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+ncelab: *W,COVDCL: By default coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators, and for expressions in assignment statements, use the "set_expr_scoring -all" coverage configuration command at elaboration.
+	Generating native compiled code:
+		worklib.window:v <0x15633423>
+			streams:   4, words:  1769
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:              10      10
+		Scalar wires:            4       -
+		Vectored wires:          2       -
+		Always blocks:           3       3
+		Initial blocks:          2       2
+		Cont. assignments:       1       1
+		Pseudo assignments:      5       5
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.window_tb:v
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /CAD/IUS92/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> database -open waves -shm -default
+Created default SHM database waves
+ncsim> probe -create -all -depth all
+Created probe 1
+ncsim> 
+ncsim> run
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+Simulation interrupted at 6644450 NS + 1
+ncsim> ^C
+ncsim> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  window_tb(window_tb)
+  design   :  design
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/design/2db91c47_00000000.ucm (reused)
+  data               :  ./cov_work/design/test/icc.ucd
+TOOL:	irun	09.20-s022: Exiting on Feb 08, 2023 at 23:07:28 CST  (total: 00:00:40)

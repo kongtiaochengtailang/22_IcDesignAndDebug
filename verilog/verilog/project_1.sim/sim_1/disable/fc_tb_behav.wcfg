@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="fc_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="fc_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="4118631000fs"></ZoomStartTime>
+      <ZoomEndTime time="5494631001fs"></ZoomEndTime>
+      <Cursor1Time time="5110000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="166"></NameColumnWidth>
+      <ValueColumnWidth column_width="73"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/fc_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/ivalid" type="logic">
+      <obj_property name="ElementShortName">ivalid</obj_property>
+      <obj_property name="ObjectShortName">ivalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/din_0" type="array">
+      <obj_property name="ElementShortName">din_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_0[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/din_1" type="array">
+      <obj_property name="ElementShortName">din_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_1[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/din_2" type="array">
+      <obj_property name="ElementShortName">din_2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_2[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/din_3" type="array">
+      <obj_property name="ElementShortName">din_3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_3[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/din_4" type="array">
+      <obj_property name="ElementShortName">din_4[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_4[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/din_5" type="array">
+      <obj_property name="ElementShortName">din_5[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din_5[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/weight" type="array">
+      <obj_property name="ElementShortName">weight[7:0]</obj_property>
+      <obj_property name="ObjectShortName">weight[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/weight_en" type="logic">
+      <obj_property name="ElementShortName">weight_en</obj_property>
+      <obj_property name="ObjectShortName">weight_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/ovalid" type="logic">
+      <obj_property name="ElementShortName">ovalid</obj_property>
+      <obj_property name="ObjectShortName">ovalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/dout" type="array">
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/cnt_line" type="array">
+      <obj_property name="ElementShortName">cnt_line[10:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_line[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/count_w" type="array">
+      <obj_property name="ElementShortName">count_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">count_w[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/fp_i" type="array">
+      <obj_property name="ElementShortName">fp_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fp_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/i_fc" type="array">
+      <obj_property name="ElementShortName">i_fc[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_fc[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/fc_result_tb" type="array">
+      <obj_property name="ElementShortName">fc_result_tb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fc_result_tb[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/cnt_fc" type="array">
+      <obj_property name="ElementShortName">cnt_fc[10:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_fc[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fc_tb/display_line" type="array">
+      <obj_property name="ElementShortName">display_line[31:0]</obj_property>
+      <obj_property name="ObjectShortName">display_line[31:0]</obj_property>
+   </wvobject>
+</wave_config>

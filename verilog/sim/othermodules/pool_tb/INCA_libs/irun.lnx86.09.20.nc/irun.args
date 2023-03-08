@@ -1,0 +1,15 @@
+//
+// File created by:  irun
+// Do not modify this file
+//
+-gui
+-f
+my.flist
+-input
+script.tcl
+-message
+-coverage
+all
+-covoverwrite
++access+rwc
++sv

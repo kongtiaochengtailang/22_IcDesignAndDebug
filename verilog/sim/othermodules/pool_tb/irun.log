@@ -1,0 +1,93 @@
+irun: 09.20-s022: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	irun	09.20-s022: Started on Feb 08, 2023 at 23:19:03 CST
+irun
+	-gui
+	-f my.flist
+		../rtl/maxpooling_tb.v
+		../rtl/maxpooling.v
+	-input script.tcl
+	-message
+	-coverage all
+	-covoverwrite
+	+access+rwc
+	+sv
+file: ../rtl/maxpooling_tb.v
+	module worklib.maxpooling_tb:v
+		errors: 0, warnings: 0
+file: ../rtl/maxpooling.v
+	module worklib.maxpooling:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		maxpooling_tb
+
+	Extracting FSMs for coverage:
+		worklib.maxpooling
+		worklib.maxpooling_tb
+	Total FSMs extracted = 0
+	Building instance overlay tables: .................... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+ncelab: *W,COVDCL: By default coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators, and for expressions in assignment statements, use the "set_expr_scoring -all" coverage configuration command at elaboration.
+	Generating native compiled code:
+		worklib.maxpooling:v <0x369d6848>
+			streams:  14, words:  8434
+		worklib.maxpooling_tb:v <0x64a9f7b1>
+			streams:  15, words:  8079
+	Loading native compiled code:     .................... Done
+	Building instance specific data structures.
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 2       2
+		Registers:              20      20
+		Scalar wires:            5       -
+		Vectored wires:          2       -
+		Always blocks:           8       8
+		Initial blocks:          5       5
+		Cont. assignments:       2       2
+		Pseudo assignments:      5       5
+		Simulation timescale:  1ns
+	Writing initial simulation snapshot: worklib.maxpooling_tb:v
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /CAD/IUS92/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> database -open waves -shm -default
+Created default SHM database waves
+ncsim> probe -create -all -depth all
+Created probe 1
+ncsim> 
+ncsim> probe -create -shm maxpooling_tb.pool_result_tb
+Created probe 2
+ncsim> run
+picture read over
+maxpooling complete
+          0 :  0   0   0   0   0   0   0   0   0   0   0   0  
+          1 :  0   0   0   0   0   0 101  69   0   0   0   0  
+          2 :  0   0   0   0  70 255 255 255 252   1   0   0  
+          3 :  0   0   0  16 255 255 216 163 255  15   0   0  
+          4 :  0   0   0 116 255 102   0  17 255 178   0   0  
+          5 :  0   0   0 255 255  40   0  18 255 161   0   0  
+          6 :  0   0   2 255 255   1   0 174 255 134   0   0  
+          7 :  0   0   0 255 255  15  29 255 255  12   0   0  
+          8 :  0   0   0 255 255  91 255 255 192   0   0   0  
+          9 :  0   0   0  78 255 255 255 108   0   0   0   0  
+         10 :  0   0   0   0 105 149   0   0   0   0   0   0  
+         11 :  0   0   0   0   0   0   0   0   0   0   0   0  
+         12 :Simulation complete via $finish(1) at time 11560 NS + 0
+../rtl/maxpooling_tb.v:108 		$finish;
+ncsim> ^C
+ncsim> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  maxpooling_tb(maxpooling_tb)
+  design   :  design
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/design/1680b7ea_00000000.ucm
+  data               :  ./cov_work/design/test/icc.ucd
+TOOL:	irun	09.20-s022: Exiting on Feb 08, 2023 at 23:19:50 CST  (total: 00:00:47)

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="ERROR: [IMPL 213-28] Failed to generate IP.&#xD;&#xA;command 'ap_source' returned error code&#xD;&#xA;    while executing&#xD;&#xA;&quot;source D:/personal_srcs/homework/ip_cnn_pool/cnn_hls/solution1/export.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main D:/personal_srcs/homework/ip_cnn_pool/cnn_hls/solution1/export.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="cnn_hls" solutionName="solution1" date="2023-01-19T10:48:15.656+0800"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SCHED 204-21] The critical path in module 'pooling' consists of the following:&#xD;&#xA;&#x9;'phi' operation ('jj') with incoming values : ('jj', ../../Fpga-accelerator-demos-main/Fpga-accelerator-demos-main/pooling.cpp:36) [127]  (0 ns)&#xD;&#xA;&#x9;'add' operation of DSP[138] ('w.V', ../../Fpga-accelerator-demos-main/Fpga-accelerator-demos-main/pooling.cpp:39) [134]  (0 ns)&#xD;&#xA;&#x9;'mul' operation of DSP[138] ('ret.V', ../../Fpga-accelerator-demos-main/Fpga-accelerator-demos-main/pooling.cpp:46) [136]  (3.36 ns)&#xD;&#xA;&#x9;'add' operation of DSP[138] ('ret.V', ../../Fpga-accelerator-demos-main/Fpga-accelerator-demos-main/pooling.cpp:46) [138]  (3.02 ns)&#xD;&#xA;&#x9;'add' operation ('ret.V', ../../Fpga-accelerator-demos-main/Fpga-accelerator-demos-main/pooling.cpp:46) [140]  (3.1 ns)" projectName="cnn_hls" solutionName="solution1" date="2023-01-19T10:47:48.683+0800" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (9.4826ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)." projectName="cnn_hls" solutionName="solution1" date="2023-01-19T10:47:48.680+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'pooling_ap_uitofp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2020-01-19T10:50:09.707+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'pooling_ap_fdiv_14_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2020-01-19T10:50:08.710+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'pooling_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2020-01-19T10:50:07.836+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'pooling_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2020-01-19T10:50:06.936+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'pooling_ap_uitofp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2020-01-19T10:49:20.812+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'pooling_ap_fdiv_14_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2020-01-19T10:49:19.824+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'pooling_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2020-01-19T10:49:18.925+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'pooling_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2020-01-19T10:49:18.026+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'pooling_ap_uitofp_4_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2023-01-19T10:48:15.178+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'pooling_ap_fdiv_14_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2023-01-19T10:48:14.191+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'pooling_ap_fcmp_0_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2023-01-19T10:48:13.315+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'pooling_ap_fadd_3_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cnn_hls" solutionName="solution1" date="2023-01-19T10:48:12.409+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

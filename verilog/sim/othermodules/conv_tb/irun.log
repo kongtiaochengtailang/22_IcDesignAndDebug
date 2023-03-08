@@ -1,0 +1,217 @@
+irun: 09.20-s022: (c) Copyright 1995-2010 Cadence Design Systems, Inc.
+TOOL:	irun	09.20-s022: Started on Feb 08, 2023 at 23:13:53 CST
+irun
+	-gui
+	-f my.flist
+		../rtl/conv_tb.v
+		../rtl/conv.v
+		../rtl/window.v
+	-input script.tcl
+	-message
+	-coverage all
+	-covoverwrite
+	+access+rwc
+	+sv
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /CAD/IUS92/tools/inca/files/ncsimrc
+ncsim> 
+ncsim> database -open waves -shm -default
+Created default SHM database waves
+ncsim> probe -create -all -depth all
+Created probe 1
+ncsim> 
+ncsim> probe -create -shm conv_tb.conv_BmpData_1 conv_tb.conv_pixel_data_1 conv_tb.conv_result_r conv_tb.rBmpData
+Created probe 2
+ncsim> run
+picture read over
+conv complete
+          0 :         0          0          0          0          0          0          0          0         10        158        410        610        640        630        482        230         30          0          0          0          0          0          0          0  
+          1 :         0          0          0          0          0          0          0          0         46        444        946       1398       1534       1488       1090        588        136          0          0          0          0          0          0          0  
+          2 :         0          0          0          0          0          0          0         20        262        910       1662       2366       2588       2346       1698        946        242          0          0          0          0          0          0          0  
+          3 :         0          0          0          0          0          0        108        316        808       1706       2708       3556       3758       3374       2536       1534        578        168         60          0          0          0          0          0  
+          4 :         0          0          0          0          0          0        360        818       1560       2708       3960       4808       5010       4626       3756       2554       1346        686        328         50          0          0          0          0  
+          5 :         0          0          0          0          0        180        794       1504       2488       3740       4812       5438       5578       5204       4482       3532       2292       1442        832        302          0          0          0          0  
+          6 :         0          0          0          0         62        462       1328       2288       3486       4676       5424       5622       5466       5004       4532       3936       2976       2172       1436        656        104          0          0          0  
+          7 :         0          0          0         30        322        972       2090       3280       4470       5316       5572       5266       4774       4320       4190       4086       3620       3034       2272       1264        462        116          4          0  
+          8 :         0          0          0         66        608       1508       2770       3958       4880       5226       4982       4280       3622       3292       3460       3856       3894       3726       3106       2050        998        400         38          0  
+          9 :         0          0          0        102        894       2044       3254       4220       4856       4702       3958       3056       2370       2040       2270       3064       3606       3938       3602       2734       1534        684         72          0  
+         10 :         0          0          0        138       1182       2404       3360       4074       4422       3764       2696       1816       1162        832       1092       2086       3114       3918       3996       3350       2202       1098        234          0  
+         11 :         0          0          0        276       1508       2760       3464       3928       3888       2792       1548        844        380        174        542       1682       2934       4048       4286       3782       2634       1382        268          0  
+         12 :         0          0          0        462       1714       2966       3418       3632       3188       1936        684        232         38         82        588       1736       2998       4208       4438       3932       2784       1522        292          0  
+         13 :         0          0          0        642       1894       3146       3346       3374       2732       1480        228         28        162        474       1122       2270       3500       4378       4324       3676       2528       1298        258          0  
+         14 :         0          0          0        822       2074       3326       3326       3326       2504       1252          0        180        562       1124       1992       3192       4168       4576       4238       3370       2170       1014        224          0  
+         15 :         0          0          0       1002       2254       3506       3578       3650       2874       1874        874       1236       1798       2386       3224       4224       4692       4596       3844       2754       1502        600         62          0  
+         16 :         0          0          0        976       2228       3480       3804       4126       3626       2876       2126       2488       3050       3638       4368       5014       4978       4382       3346       2114        966        316         28          0  
+         17 :         0          0          0        790       2020       3272       3848       4420       4356       3878       3378       3740       4260       4724       5008       5162       4622       3590       2400       1364        458         60          0          0  
+         18 :         0          0          0        574       1614       2756       3584       4406       4808       4770       4630       4992       5226       5190       4974       4628       3616       2560       1620        834        178          0          0          0  
+         19 :         0          0          0        358       1148       2040       2938       3932       4800       5184       5364       5546       5416       4880       4242       3576       2496       1632        942        406          0          0          0          0  
+         20 :         0          0          0        142        680       1320       2146       3068       3926       4310       4490       4490       4180       3618       2980       2314       1488        876        438        154          0          0          0          0  
+         21 :         0          0          0         30        318        708       1282       1954       2674       3058       3238       3238       2928       2366       1728       1166        592        230         42          8          0          0          0          0  
+         22 :         0          0          0          0         60        200        522        944       1444       1806       1986       1986       1698       1198        776        456        134          0          0          0          0          0          0          0  
+         23 :         0          0          0          0          0          0         70        242        492        664        734        734        590        340        168         98         28          0          0          0          0          0          0          0  
+         24 :picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+picture read over
+Simulation interrupted at 6157550 NS + 1
+ncsim> ^C
+ncsim> exit
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  conv_tb(conv_tb)
+  design   :  design
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/design/3705f44b_00000000.ucm (reused)
+  data               :  ./cov_work/design/test/icc.ucd
+TOOL:	irun	09.20-s022: Exiting on Feb 08, 2023 at 23:14:33 CST  (total: 00:00:40)

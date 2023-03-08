@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="maxpooling_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="maxpooling_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="499682000fs"></ZoomStartTime>
+      <ZoomEndTime time="568682001fs"></ZoomEndTime>
+      <Cursor1Time time="530000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="166"></NameColumnWidth>
+      <ValueColumnWidth column_width="69"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/maxpooling_tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/ivalid" type="logic">
+      <obj_property name="ElementShortName">ivalid</obj_property>
+      <obj_property name="ObjectShortName">ivalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/state" type="logic">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/din" type="array">
+      <obj_property name="ElementShortName">din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">din[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/dout" type="array">
+      <obj_property name="ElementShortName">dout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/ovalid" type="logic">
+      <obj_property name="ElementShortName">ovalid</obj_property>
+      <obj_property name="ObjectShortName">ovalid</obj_property>
+      <obj_property name="CustomSignalColor">#FFD700</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/STATE" type="array">
+      <obj_property name="ElementShortName">STATE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">STATE[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/cnt_line" type="array">
+      <obj_property name="ElementShortName">cnt_line[10:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_line[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/count_w" type="array">
+      <obj_property name="ElementShortName">count_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">count_w[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/fp_i" type="array">
+      <obj_property name="ElementShortName">fp_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fp_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/pool_result_tb" type="array">
+      <obj_property name="ElementShortName">pool_result_tb[0:150][7:0]</obj_property>
+      <obj_property name="ObjectShortName">pool_result_tb[0:150][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/cnt_pool" type="array">
+      <obj_property name="ElementShortName">cnt_pool[10:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt_pool[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/maxpooling_tb/display_line" type="array">
+      <obj_property name="ElementShortName">display_line[31:0]</obj_property>
+      <obj_property name="ObjectShortName">display_line[31:0]</obj_property>
+   </wvobject>
+</wave_config>
